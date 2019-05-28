@@ -1,0 +1,17 @@
+/* pages/mine/mine.wxss */
+.header{
+  background-color: #0a0722;
+  color: #fff;
+  padding-top: 20rpx;
+  height: 150rpx;
+}
+.img{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.line{
+  width: 750rpx;
+  height: 2rpx;
+  background-color: #f5f5f5;
+}

@@ -1,0 +1,23 @@
+<view class='f28'>
+  <view class='r1 header'>
+    <image class='img ml60' src='{{user.avatar}}'></image>
+    <view class='col ml60 mt10'>
+      <view class='f32'>{{user.nickname}}</view>
+      <view class='f28 mt20'>用户编号:
+        <span class="ml20">{{user.id}}</span>
+      </view>
+    </view>
+  </view>
+  <view class='r1 mt30 ml30'>
+    <view style='color:#1f4cd4' class='iconfont icon-number1'></view>
+    <view class='ml30'>剩余次数：</view>
+    <view style='right:50rpx;' class='abs'>0次</view>
+  </view>
+  <view class='line mt20'></view>
+  <view class='r1 mt30 ml30'>
+    <view style='color:#1f4cd4' class='iconfont icon-vip'></view>
+    <view class='ml30'>vip到期时间：</view>
+    <view style='right:50rpx;' class='abs'>2019-12-12 13:31</view>
+  </view>
+  <view class='line mt20'></view>
+</view>

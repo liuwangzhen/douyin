@@ -1,0 +1,36 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/question/question",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0a0722",
+    "navigationBarTitleText": "一键去水印",
+    "navigationBarTextStyle":"white",
+    "backgroundColor": "#0a0722"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#2c2c2c",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "images/index-no.png",
+        "selectedIconPath": "images/index.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine-no.png",
+        "selectedIconPath": "images/mine.png"
+      }
+    ]
+  }
+}

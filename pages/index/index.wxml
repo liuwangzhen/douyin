@@ -1,0 +1,36 @@
+<view>
+  <view class='r1 ml40 mt40'>
+    <input bindblur='iptblur' placeholder-class='ipt-p' class='ipt f30' placeholder='请输入解析地址'></input>
+    <view class='btn' bindtap='goDouyin'>解析视频</view>
+  </view>
+  <view class='mt30 ml40'>
+    <video style='width:600rpx;height:389rpx;margin-left:35rpx;' wx:if="{{status==3}}" id="myVideo" src='{{douyin}}'></video>
+
+    <view wx:if="{{status==1}}">请输入正确的抖音视频链接</view>
+    <view wx:if="{{status==2}}">请输入正确的抖音视频链接</view>
+  </view>
+  <button wx:if="{{status==3}}" bindtap='save' class='save b f30'>保存视频</button>
+  <view class='load' wx:if="{{loading==true}}">
+    <image class='limg' src='../../images/loading.svg'></image>
+  </view>
+  <button open-type='openSetting' bindopensetting="alert" wx:if="{{status==3&&NotAllow==true}}" class='save b f30'>手动授权</button>
+  <view class='line mt40'></view>
+  <navigator url="../question/question" hover-class='no' class='ml40 f30 b le3 item r1'>
+    <view>常见问题</view>
+    <view style='margin-top:4rpx;right:50rpx;' class='iconfont2 icon-qianjin abs f28'></view>
+  </navigator>
+  <view class='ml40 w670 mt20'>
+    <view class='f28 le3'>简易教程：</view>
+    <view class='r1 mt20'>
+      <image wx:key="{{index}}" wx:for="{{imgs}}" data-src="{{item.path}}" bindtap='preview' mode='aspectFill' class='img {{index==1?"ml20":""}}' src='{{item.path}}'></image>
+    </view>
+    <view class='line2 mt20'></view>
+    <view style='color:#1f4cd4;padding-bottom:60rpx;' class='f26 cen mt20'>视频归平台及作者所有，本站不存储任何视频和图片。</view>
+  </view>
+  <!-- 分享 -->
+  <button hover-class='none' open-type='share' class='share'>
+     <view style='font-size:40rpx;margin-left:-8rpx;margin-top:-10rpx;' class='iconfont icon-zhuanfa'></view>
+  </button>
+
+
+</view>
